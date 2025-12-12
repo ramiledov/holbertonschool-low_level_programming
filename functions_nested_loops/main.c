@@ -1,8 +1,17 @@
 #include "main.h"
 
+/**
+ * main - test file
+ *
+ * Return: Always 0
+ */
+
 int main(void)
 {
-    _putchar('H'); /* This is ONLY to test _putchar works */
-    _putchar('\n');
-    return (0);
+	_putchar('O');
+	_putchar('K');
+	_putchar('\n');
+
+	return (0);
 }
+
