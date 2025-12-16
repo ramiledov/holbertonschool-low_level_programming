@@ -7,17 +7,17 @@
  */
 void print_alphabet_x10(void)
 {
-    int i;       /* counter for 10 times */
-    char c;
+	int i;
+	char c;
 
-    for (i = 0; i < 10; i++)   /* repeat 10 times */
-    {
-        c = 'a';
-        while (c <= 'z')       /* print a-z using while loop */
+	for (i = 0; i < 10; i++)
+	{
+        	c = 'a';
+        while (c <= 'z')
         {
-            _putchar(c);
-            c++;
+            	_putchar(c);
+            	c++;
         }
-        _putchar('\n');        /* new line after each alphabet */
+        _putchar('\n');
     }
 }
