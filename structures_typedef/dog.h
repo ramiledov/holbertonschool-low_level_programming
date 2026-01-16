@@ -9,9 +9,9 @@
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+char *name;
+float age;
+char *owner;
 };
 
 /* typedef for struct dog */
@@ -24,3 +24,4 @@ dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d); /* THIS LINE MUST EXIST */
 
 #endif /* DOG_H */
+
