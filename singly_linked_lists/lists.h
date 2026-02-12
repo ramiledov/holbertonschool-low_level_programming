@@ -4,27 +4,23 @@
 #include <stddef.h>
 
 /**
- * struct dlistint_s - doubly linked list node
- * @n: integer stored in the node
- * @prev: points to the previous node
- * @next: points to the next node
+ * struct list_s - singly linked list node
+ * @str: string (malloc'ed string)
+ * @len: length of the string
+ * @next: pointer to the next node
  */
-typedef struct dlistint_s
+typedef struct list_s
 {
-	int n;
-	struct dlistint_s *prev;
-	struct dlistint_s *next;
-} dlistint_t;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
 
-/* Function prototypes */
-size_t print_dlistint(const dlistint_t *h);            /* Task 0 */
-size_t dlistint_len(const dlistint_t *h);              /* Task 1 */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n);       /* Task 2 */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);   /* Task 3 */
-void free_dlistint(dlistint_t *head);                  /* Task 4 */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index); /* Task 5 */
-int sum_dlistint(dlistint_t *head);                    /* Task 6 */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n); /* Task 7 */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);           /* Task 8 */
+/* Function prototypes for Tasks 0–4 */
+size_t print_list(const list_t *h);                  /* Task 0 */
+size_t list_len(const list_t *h);                    /* Task 1 */
+list_t *add_node(list_t **head, const char *str);   /* Task 2 */
+list_t *add_node_end(list_t **head, const char *str); /* Task 3 */
+void free_list(list_t *head);                        /* Task 4 */
 
 #endif /* LISTS_H */
